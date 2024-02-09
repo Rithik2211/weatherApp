@@ -1,6 +1,8 @@
 .app{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: url(./assests/cloudy.png);
     background-size:cover;
@@ -15,9 +17,21 @@
     gap : 20px;
     width: 400px;
     height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+}
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	.search-bar{
+		width: 150px;
+	}
+    .search-text{
+        width: 150px;
+    }
 }
 
 .search-text{
